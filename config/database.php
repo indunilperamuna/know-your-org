@@ -35,6 +35,24 @@ return [
 
     'connections' => [
 
+        'tenant' => [
+            'driver' => 'mysql',
+            'database' => null,
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            // And other options if needed ...
+        ],
+
+        'landlord' => [
+            'driver' => 'mysql',
+            'database' => 'kyo_landlord',
+            'host' => env('DB_HOST', '127.0.0.1'),
+            'username' => env('DB_USERNAME', 'forge'),
+            'password' => env('DB_PASSWORD', ''),
+            // And other options if needed ...
+        ],
+
         'sqlite' => [
             'driver' => 'sqlite',
             'url' => env('DATABASE_URL'),
