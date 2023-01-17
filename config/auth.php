@@ -65,6 +65,11 @@ return [
             'model' => App\Models\User::class,
         ],
 
+        'admin_users' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\AdminUsers::class,
+        ],
+
         // 'users' => [
         //     'driver' => 'database',
         //     'table' => 'users',
